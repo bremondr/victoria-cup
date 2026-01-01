@@ -17,7 +17,7 @@
         formatLabel: 'Formát a typ',
         formatValue: '7 vs 7 • mix • tráva',
         capacityLabel: 'Kapacita a startovné',
-        capacityValue: '10 týmů • 3000 Kč / tým nebo 130 EUR / tým'
+        capacityValue: '10 týmů • TF 3000Kč/tým + PF 100Kč/hráče'
       },
       format: {
         title: 'Jak turnaj proběhne',
@@ -35,9 +35,9 @@
         transportText:
           'Autobus z Děčína staví na náměstí pár kroků od školy. Parkování je možné na náměstí nebo u školy u hřiště.',
         sleepHeading: 'Spaní',
-        sleepText: 'Spaní v tělocvičně ve škole nebo ve vlastním stanu na školním pozemku.',
+        sleepText: 'Spaní v tělocvičně ve škole nebo ve vlastním stanu na školním pozemku. (PF 100Kč/hráče)',
         foodHeading: 'Jídlo',
-        foodText: 'Hospody ve vesnici nebo stánek s jednoduchým občerstvením přímo u hřiště.'
+        foodText: 'Hospody ve vesnici (Restaurace Radnice, Hospůdka Na křižovatce, Restaurace Na Stodolci) nebo stánek s jednoduchým občerstvením přímo u hřiště. V obci je také několik menších obchodů.'
       },
       map: {
         title: 'Kde hrajeme',
@@ -87,7 +87,7 @@
         formatLabel: 'Format & type',
         formatValue: '7 vs 7 • mixed • grass',
         capacityLabel: 'Capacity & fee',
-        capacityValue: '10 teams • 3000 CZK / team or 130 EUR / team'
+        capacityValue: '10 teams • TF 3000 CZK/team + PF 100 CZK/player'
       },
       format: {
         title: 'How the tournament runs',
@@ -107,7 +107,7 @@
         sleepHeading: 'Sleeping',
         sleepText: 'Indoors in the school gym or outdoors in your own tent on the school grounds.',
         foodHeading: 'Food',
-        foodText: 'Local pubs in the village plus a simple snack stand by the field.'
+        foodText: 'Village pubs (Restaurace Radnice, Hospůdka Na křižovatce, Restaurace Na Stodolci) or a small refreshment stand right next to the field.'
       },
       map: {
         title: 'Where we play',
