@@ -64,7 +64,7 @@
       },
       lore: {
         title: 'Victoria cup lore',
-        text: 'TBD',
+        text: '',
         story:
           'Tadeáš Haenke, rodák z Chřibské, kde se turnaj odehrává, se proslavil jako světoběžný botanik a badatel, který na svých výpravách do Jižní Ameriky poprvé zaznamenal obří leknín Victoria amazonica, známý také jako viktorie královská. Název turnaje se odkazuje na tuto rostlinu jejíž listy připomínají svým tvarem herní disk.'
       },
@@ -136,7 +136,7 @@
       },
       lore: {
         title: 'Victoria cup lore',
-        text: 'TBD',
+        text: '',
         story:
           'Tadeáš Haenke, a native of Chřibská where the tournament takes place, became famous as a globetrotting botanist and explorer who, during his expeditions to South America, was the first to document the giant water lily Victoria amazonica, also known as the Victoria regia. The name of the tournament refers to this plant, whose leaves resemble the shape of a flying disc.'
       },
