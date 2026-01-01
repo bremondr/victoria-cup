@@ -35,7 +35,7 @@
         transportText:
           'Autobus z Děčína staví na náměstí pár kroků od školy. Parkování je možné na náměstí nebo u školy u hřiště.',
         sleepHeading: 'Spaní',
-        sleepText: 'Spaní v tělocvičně ve škole nebo ve vlastním stanu na školním pozemku. (PF 100Kč/hráče)',
+        sleepText: 'Spaní v tělocvičně ve škole nebo ve vlastním stanu na školním pozemku. (zahrnuto v PF 100Kč/hráče)',
         foodHeading: 'Jídlo',
         foodText:
           'Hospody ve vesnici (Restaurace Radnice, Hospůdka Na křižovatce, Restaurace Na Stodolci) nebo stánek s jednoduchým občerstvením přímo u hřiště. V obci je také několik menších obchodů.'
@@ -53,7 +53,7 @@
       contact: {
         title: 'Kontakt',
         personHeading: 'Organizátor',
-        personName: 'Ondra Brém',
+        personName: 'Sunset - Ondra Brém',
         emailHeading: 'Email',
         phoneHeading: 'Telefon'
       },
@@ -107,7 +107,7 @@
         transportText:
           'The bus from Děčín stops right on the town square a short walk from the school. Parking is available on the square or next to the school.',
         sleepHeading: 'Sleeping',
-        sleepText: 'Indoors in the school gym or outdoors in your own tent on the school grounds.',
+        sleepText: 'Indoors in the school gym or outdoors in your own tent on the school grounds. (included in PF 100 CZK/player)',
         foodHeading: 'Food',
         foodText:
           'Village pubs (Restaurace Radnice, Hospůdka Na křižovatce, Restaurace Na Stodolci) or a small refreshment stand right next to the field.'
@@ -125,7 +125,7 @@
       contact: {
         title: 'Contact',
         personHeading: 'Organizer',
-        personName: 'Ondra Brém',
+        personName: 'Sunset - Ondra Brém',
         emailHeading: 'Email',
         phoneHeading: 'Phone'
       },
