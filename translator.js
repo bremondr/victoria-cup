@@ -69,7 +69,7 @@
           'Chceme, aby turnaj připomínal dlouhé letní večery, kdy se hra protáhne až do oranžového nebe. Přijeďte si pro vlastní západ slunce.'
       },
       footer: {
-        text: `© ${year} Victoria cup by Sunset. Všechna práva vyhrazena.`,
+        text: `© ${year} Victoria cup by <a href="https://www.sunsetfrisbee.cz/">Sunset</a>. Všechna práva vyhrazena.`,
         backToTop: 'Zpět nahoru'
       }
     },
@@ -141,7 +141,7 @@
           'We want the tournament to feel like those endless summer evenings when games continue until the sky turns orange. Come chase your own sunset.'
       },
       footer: {
-        text: `© ${year} Victoria Cup by Sunset. All rights reserved.`,
+        text: `© ${year} Victoria Cup by <a href="https://www.sunsetfrisbee.cz/">Sunset</a>. All rights reserved.`,
         backToTop: 'Back to top'
       }
     }
