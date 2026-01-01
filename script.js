@@ -6,28 +6,25 @@
         tagline: 'Victoria Cup',
         title: 'Victoria cup: až do západu slunce',
         date: '18.–19. července 2026',
-        lead:
-          'Místní turnaj na trávě v Chřibské pro mixové týmy. Hrajeme férově, jednoduše a s pohodovou atmosférou uprostřed léta.',
+        lead: 'Letní fun turnaj na trávě v Chřibské pro mixové týmy.',
         cta: 'Zjistit více'
       },
       facts: {
         title: 'Základní informace',
         locationLabel: 'Místo',
-        locationValue: 'Fotbalové hřiště u ZŠ a MŠ Tadeáše Haenkeho Chřibská',
+        locationValue: 'Chřibská',
         mapLink: 'Otevřít mapu',
         formatLabel: 'Formát a typ',
-        formatValue: '7 vs 7 • mix • tráva • zápasy 60 minut nebo do 13 bodů',
+        formatValue: '7 vs 7 • mix • tráva',
         capacityLabel: 'Kapacita a startovné',
-        capacityValue: 'Max. 10 týmů • 3000 Kč / tým nebo 130 EUR / tým'
+        capacityValue: '10 týmů • 3000 Kč / tým nebo 130 EUR / tým'
       },
       format: {
         title: 'Jak turnaj proběhne',
-        lead: 'Jednoduchý dvoudenní program bez zbytečných efektů – jen frisbee, přátelé a prostor na západy slunce.',
         points: [
-          'Sobota ráno až neděle odpoledne, registrace od 8:00',
+          'Sobota ráno až neděle odpoledne, první výhoz v 9:00',
           '2 skupiny a následně vyřazovací pavouk o pořadí',
           'Každý zápas 60 minut nebo do 13 bodů (cap +1)',
-          'Garantujeme minimálně 5 zápasů pro každý tým',
           'WFDF pravidla, hra bez rozhodčích a s důrazem na spirit'
         ]
       },
@@ -49,18 +46,18 @@
         title: 'Registrace týmu',
         text: 'Vyplňte formulář pro potvrzení účasti. Kapacita je omezená na 10 týmů, rozhoduje pořadí přihlášení a platby.',
         cta: 'Otevřít registrační formulář',
-        note: 'Po odeslání formuláře vám během dvou dnů potvrdíme přijetí a platební údaje.'
+        note: 'Po odeslání formuláře vám během týdne potvrdíme přijetí a platební údaje.'
       },
       contact: {
         title: 'Kontakt',
-        personHeading: 'Organizátorka',
-        personName: 'Jana Novotná',
-        emailHeading: 'E-mail',
+        personHeading: 'Organizátor',
+        personName: 'Ondra Brém',
+        emailHeading: 'Email',
         phoneHeading: 'Telefon'
       },
       gallery: {
         title: 'Místo pro fotky',
-        text: 'Sem doplníme aktuální fotografie hřiště a zázemí, až je budete mít k dispozici.'
+        text: 'Sem doplníme aktuální fotografie hřiště a zázemí, až je budeme mít k dispozici.'
       },
       footer: {
         text: `© ${year} Victoria cup. Všechna práva vyhrazena.`,
@@ -72,29 +69,27 @@
         tagline: 'Victoria Cup',
         title: 'Victoria Cup: Until the Sunset',
         date: '18–19 July 2026',
-        lead:
-          'A relaxed mixed grass tournament in Chřibská. Two days of fair play ultimate, friendly people and a view of the Lusatian Mountains.',
+        lead: 'A summer fun tournament on grass in Chřibská for mixed teams.',
         cta: 'Read more'
       },
       facts: {
         title: 'Key Facts',
         locationLabel: 'Location',
-        locationValue: 'Football pitch by Tadeáš Haenke Primary & Kindergarten, Chřibská',
+        locationValue: 'Chřibská',
         mapLink: 'Open map',
         formatLabel: 'Format & type',
-        formatValue: '7 vs 7 • mixed • natural grass • games 60 min or to 13 points',
+        formatValue: '7 vs 7 • mixed • grass',
         capacityLabel: 'Capacity & fee',
-        capacityValue: 'Max 10 teams • 3000 CZK / team or 130 EUR / team'
+        capacityValue: '10 teams • 3000 CZK / team or 130 EUR / team'
       },
       format: {
-        title: 'Tournament format',
-        lead: 'A straightforward schedule focused on playing. No distractions, just quality games and time to enjoy sunset views.',
+        title: 'How the tournament runs',
+        lead: '',
         points: [
-          'Saturday morning until Sunday afternoon, on-site check-in from 8:00',
-          'Two pools followed by a full placement bracket',
+          'Saturday morning through Sunday afternoon, first pull at 9:00',
+          'Two pools followed by a placement bracket',
           'Games are 60 minutes or first to 13 (cap +1)',
-          'Every team plays at least five games',
-          'WFDF rules, self-officiated with focus on Spirit'
+          'WFDF rules with self-officiated play focused on Spirit'
         ]
       },
       travel: {
@@ -113,14 +108,14 @@
       },
       signup: {
         title: 'Sign up',
-        text: 'Please submit the form to secure your slot. Capacity is limited to 10 teams and we confirm places after payment.',
+        text: 'Please submit the form to confirm your spot. Capacity is limited to 10 teams; order of registration and payment decides.',
         cta: 'Open sign-up form',
-        note: 'We will reply within two days with payment details and the next steps.'
+        note: 'We will reply within a week with confirmation and payment details.'
       },
       contact: {
         title: 'Contact',
-        personHeading: 'Tournament lead',
-        personName: 'Jana Novotná',
+        personHeading: 'Organizer',
+        personName: 'Ondra Brém',
         emailHeading: 'Email',
         phoneHeading: 'Phone'
       },
