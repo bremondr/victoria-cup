@@ -57,8 +57,9 @@
         phoneHeading: 'Telefon'
       },
       gallery: {
-        title: 'Místo pro fotky',
-        text: 'Sem doplníme aktuální fotografie hřiště a zázemí, až je budeme mít k dispozici.'
+        title: 'Jak to na místě vypadá',
+        text: 'Sem doplníme aktuální fotografie hřiště a zázemí, až je budeme mít k dispozici.',
+        placeholder: 'Další fotky brzy'
       },
       lore: {
         title: 'Victoria cup lore',
@@ -127,8 +128,9 @@
         phoneHeading: 'Phone'
       },
       gallery: {
-        title: 'Space for photos',
-        text: 'Image placeholders are ready; swap them for real photos of the venue once you have them.'
+        title: 'Location photos',
+        text: 'Image placeholders are ready; swap them for real photos of the venue once you have them.',
+        placeholder: 'More photos soon'
       },
       lore: {
         title: 'Victoria cup lore',

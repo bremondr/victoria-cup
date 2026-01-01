@@ -118,12 +118,18 @@
       <section class="section gallery" id="gallery">
         <div class="section__header">
           <h2 data-i18n="gallery.title"></h2>
-          <p data-i18n="gallery.text"></p>
+          <!-- <p data-i18n="gallery.text"></p> -->
         </div>
         <div class="gallery__grid">
-          <div class="gallery__item" aria-hidden="true"></div>
-          <div class="gallery__item" aria-hidden="true"></div>
-          <div class="gallery__item" aria-hidden="true"></div>
+          <figure class="gallery__item">
+            <img src="assets/satna.jpeg" alt="Zázemí u školní tělocvičny" loading="lazy" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/zahrada.jpeg" alt="Zázemí u hřiště" loading="lazy" />
+          </figure>
+          <div class="gallery__placeholder" aria-hidden="true">
+            <span data-i18n="gallery.placeholder"></span>
+          </div>
         </div>
       </section>
 
