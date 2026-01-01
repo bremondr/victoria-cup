@@ -26,7 +26,7 @@
           'Sobota ráno až neděle odpoledne, první výhoz v 9:00',
           'Zápasy jsou 50 minut (cap +1) a začínají vždy v celou hodinu',
           '2 skupiny a následně vyřazovací pavouk o pořadí',
-          'Hraje se podle <a href="https://rules.wfdf.sport/" target="_blank" rel="noopener">oficiálních WFDF pravidel</a>, hra bez rozhodčích a s důrazem na spirit'
+          'Hraje se podle <a class="text-link" href="https://rules.wfdf.sport/" target="_blank" rel="noopener">oficiálních WFDF pravidel</a>, hra bez rozhodčích a s důrazem na spirit'
         ]
       },
       travel: {
@@ -69,7 +69,7 @@
           'Chceme, aby turnaj připomínal dlouhé letní večery, kdy se hra protáhne až do oranžového nebe. Přijeďte si pro vlastní západ slunce.'
       },
       footer: {
-        text: `© ${year} Victoria cup by <a href="https://www.sunsetfrisbee.cz/">Sunset</a>. Všechna práva vyhrazena.`,
+        text: `© ${year} Victoria cup by <a class="text-link" href="https://www.sunsetfrisbee.cz/">Sunset</a>. Všechna práva vyhrazena.`,
         backToTop: 'Zpět nahoru'
       }
     },
@@ -98,7 +98,7 @@
           'Saturday morning through Sunday afternoon, first pull at 9:00',
           'Games last 50 minutes (cap +1) and always start on the full hour',
           'Two pools followed by a placement bracket',
-          'Played under the <a href="https://rules.wfdf.sport/" target="_blank" rel="noopener">official WFDF rules</a>, self-officiated (no referees) with a Spirit focus'
+          'Played under the <a class="text-link" href="https://rules.wfdf.sport/" target="_blank" rel="noopener">official WFDF rules</a>, self-officiated (no referees) with a Spirit focus'
         ]
       },
       travel: {
@@ -141,7 +141,7 @@
           'We want the tournament to feel like those endless summer evenings when games continue until the sky turns orange. Come chase your own sunset.'
       },
       footer: {
-        text: `© ${year} Victoria Cup by <a href="https://www.sunsetfrisbee.cz/">Sunset</a>. All rights reserved.`,
+        text: `© ${year} Victoria Cup by <a class="text-link" href="https://www.sunsetfrisbee.cz/">Sunset</a>. All rights reserved.`,
         backToTop: 'Back to top'
       }
     }
