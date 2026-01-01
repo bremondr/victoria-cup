@@ -66,7 +66,7 @@
         title: 'Victoria cup lore',
         text: 'TBD',
         story:
-          'Chceme, aby turnaj připomínal dlouhé letní večery, kdy se hra protáhne až do oranžového nebe. Přijeďte si pro vlastní západ slunce.'
+          'Tadeáš Haenke, rodák z Chřibské, kde se turnaj odehrává, se proslavil jako světoběžný botanik a badatel, který na svých výpravách do Jižní Ameriky poprvé zaznamenal obří leknín Victoria amazonica, známý také jako viktorie královská. Název turnaje se odkazuje na tuto rostlinu jejíž listy připomínají svým tvarem herní disk.'
       },
       footer: {
         text: `© ${year} Victoria cup by <a class="text-link" href="https://www.sunsetfrisbee.cz/">Sunset</a>. Všechna práva vyhrazena.`,
@@ -138,7 +138,7 @@
         title: 'Victoria cup lore',
         text: 'TBD',
         story:
-          'We want the tournament to feel like those endless summer evenings when games continue until the sky turns orange. Come chase your own sunset.'
+          'Tadeáš Haenke, a native of Chřibská where the tournament takes place, became famous as a globetrotting botanist and explorer who, during his expeditions to South America, was the first to document the giant water lily Victoria amazonica, also known as the Victoria regia. The name of the tournament refers to this plant, whose leaves resemble the shape of a flying disc.'
       },
       footer: {
         text: `© ${year} Victoria Cup by <a class="text-link" href="https://www.sunsetfrisbee.cz/">Sunset</a>. All rights reserved.`,
