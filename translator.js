@@ -55,7 +55,7 @@
         personHeading: 'Organizátor',
         personName: 'Sunset - Ondra Brém',
         emailHeading: 'Email',
-        phoneHeading: 'Telefon'
+        phoneHeading: 'WhatsApp'
       },
       gallery: {
         title: 'Jak to na místě vypadá',
@@ -127,7 +127,7 @@
         personHeading: 'Organizer',
         personName: 'Sunset - Ondra Brém',
         emailHeading: 'Email',
-        phoneHeading: 'Phone'
+        phoneHeading: 'WhatsApp'
       },
       gallery: {
         title: 'Location photos',
