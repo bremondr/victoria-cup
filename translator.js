@@ -46,7 +46,7 @@
       },
       signup: {
         title: 'Registrace týmu',
-        text: 'Vyplňte formulář pro potvrzení účasti. Kapacita je omezená na 10 týmů, rozhoduje pořadí přihlášení a platby.',
+        text: 'Registrace do konce Února nebo do naplnění kapacity. Ta je omezená na 10 týmů, rozhoduje pořadí přihlášení a platby.',
         cta: 'Otevřít registrační formulář',
         note: 'Po odeslání formuláře vám během týdne potvrdíme přijetí a zašleme platební údaje.'
       },
@@ -118,7 +118,7 @@
       },
       signup: {
         title: 'Sign up',
-        text: 'Please submit the form to confirm your spot. Capacity is limited to 10 teams; order of registration and payment decides.',
+        text: 'Registration open till the end of February or when the capacity is reached. Capacity is limited to 10 teams; order of registration and payment decides.',
         cta: 'Open sign-up form',
         note: 'We will reply within a week with confirmation and payment details.'
       },
