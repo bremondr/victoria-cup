@@ -21,11 +21,12 @@
       },
       format: {
         title: 'Jak turnaj proběhne',
+        lead: 'Jednoduchý víkendový plán – žádné složité ceremonie, jen frisbee a pauzy na odpočinek.',
         points: [
           'Sobota ráno až neděle odpoledne, první výhoz v 9:00',
+          'Zápasy jsou 50 minut (cap +1) a začínají vždy v celou hodinu',
           '2 skupiny a následně vyřazovací pavouk o pořadí',
-          'Každý zápas 60 minut nebo do 13 bodů (cap +1)',
-          'WFDF pravidla, hra bez rozhodčích a s důrazem na spirit'
+          'Hraje se podle <a href="https://rules.wfdf.sport/" target="_blank" rel="noopener">oficiálních WFDF pravidel</a>, hra bez rozhodčích a s důrazem na spirit'
         ]
       },
       travel: {
@@ -46,7 +47,7 @@
         title: 'Registrace týmu',
         text: 'Vyplňte formulář pro potvrzení účasti. Kapacita je omezená na 10 týmů, rozhoduje pořadí přihlášení a platby.',
         cta: 'Otevřít registrační formulář',
-        note: 'Po odeslání formuláře vám během týdne potvrdíme přijetí a platební údaje.'
+        note: 'Po odeslání formuláře vám během týdne potvrdíme přijetí a zašleme platební údaje.'
       },
       contact: {
         title: 'Kontakt',
@@ -58,6 +59,12 @@
       gallery: {
         title: 'Místo pro fotky',
         text: 'Sem doplníme aktuální fotografie hřiště a zázemí, až je budeme mít k dispozici.'
+      },
+      lore: {
+        title: 'Victoria cup lore',
+        text: 'TBD',
+        story:
+          'Chceme, aby turnaj připomínal dlouhé letní večery, kdy se hra protáhne až do oranžového nebe. Přijeďte si pro vlastní západ slunce.'
       },
       footer: {
         text: `© ${year} Victoria cup. Všechna práva vyhrazena.`,
@@ -84,12 +91,12 @@
       },
       format: {
         title: 'How the tournament runs',
-        lead: '',
+        lead: 'A clean weekend schedule focused on playing, resting, and catching the sunset.',
         points: [
           'Saturday morning through Sunday afternoon, first pull at 9:00',
+          'Games last 50 minutes (cap +1) and always start on the full hour',
           'Two pools followed by a placement bracket',
-          'Games are 60 minutes or first to 13 (cap +1)',
-          'WFDF rules with self-officiated play focused on Spirit'
+          'Played under the <a href="https://rules.wfdf.sport/" target="_blank" rel="noopener">official WFDF rules</a>, self-officiated (no referees) with a Spirit focus'
         ]
       },
       travel: {
@@ -122,6 +129,12 @@
       gallery: {
         title: 'Space for photos',
         text: 'Image placeholders are ready; swap them for real photos of the venue once you have them.'
+      },
+      lore: {
+        title: 'Victoria cup lore',
+        text: 'TBD',
+        story:
+          'We want the tournament to feel like those endless summer evenings when games continue until the sky turns orange. Come chase your own sunset.'
       },
       footer: {
         text: `© ${year} Victoria Cup. All rights reserved.`,
