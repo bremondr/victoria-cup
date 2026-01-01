@@ -120,18 +120,23 @@
           <h2 data-i18n="gallery.title"></h2>
           <!-- <p data-i18n="gallery.text"></p> -->
         </div>
-        <div class="gallery__grid">
-          <figure class="gallery__item">
-            <img src="assets/satna.jpeg" alt="Zázemí u školní tělocvičny" loading="lazy" />
-          </figure>
-          <figure class="gallery__item">
-            <img src="assets/zahrada.jpeg" alt="Zázemí u hřiště" loading="lazy" />
-          </figure>
-          <div class="gallery__placeholder" aria-hidden="true">
+        <div class="gallery__grid" data-gallery-grid>
+          <div class="gallery__placeholder" data-gallery-placeholder>
             <span data-i18n="gallery.placeholder"></span>
           </div>
         </div>
       </section>
+
+      <div class="lightbox" data-gallery-lightbox hidden aria-hidden="true">
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close">×</button>
+        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Previous image">
+          ‹
+        </button>
+        <img class="lightbox__image" data-lightbox-image alt="" />
+        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Next image">
+          ›
+        </button>
+      </div>
 
       <section class="section" id="lore">
         <div class="section__header">

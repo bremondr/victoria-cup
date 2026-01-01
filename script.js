@@ -148,6 +148,16 @@
   const textElements = document.querySelectorAll('[data-i18n]');
   const listElements = document.querySelectorAll('[data-i18n-list]');
   const languageButtons = document.querySelectorAll('.lang-button');
+  const galleryGrid = document.querySelector('[data-gallery-grid]');
+  const galleryPlaceholder = document.querySelector('[data-gallery-placeholder]');
+  const lightbox = document.querySelector('[data-gallery-lightbox]');
+  const lightboxImage = document.querySelector('[data-lightbox-image]');
+  const lightboxPrev = document.querySelector('[data-lightbox-prev]');
+  const lightboxNext = document.querySelector('[data-lightbox-next]');
+  const lightboxClose = document.querySelector('[data-lightbox-close]');
+
+  let galleryImages = [];
+  let activeImageIndex = 0;
 
   function applyLanguage(lang) {
     const langPack = translations[lang];
@@ -183,5 +193,175 @@
     });
   });
 
+  const allowedImageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.avif'];
+  const manifestCandidates = ['assets/manifest.json', 'assets/assets.json', 'assets/images.json'];
+
+  function isImagePath(path) {
+    if (!path) return false;
+    const lower = path.toLowerCase();
+    return allowedImageExtensions.some((ext) => lower.endsWith(ext));
+  }
+
+  function normalizeAssetPath(path) {
+    if (typeof path !== 'string') return null;
+    const trimmed = path.trim();
+    if (!trimmed) return null;
+    if (/^https?:\/\//i.test(trimmed)) return trimmed;
+    const clean = trimmed.replace(/^\.?\//, '');
+    return clean.startsWith('assets/') ? clean : `assets/${clean}`;
+  }
+
+  function buildAltFromFilename(path) {
+    const fileName = path.split('/').pop() || '';
+    const base = fileName.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ').trim();
+    return base ? `Victoria Cup photo – ${base}` : 'Victoria Cup photo';
+  }
+
+  async function readManifest(url) {
+    try {
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) return [];
+      const data = await response.json();
+      const files = Array.isArray(data) ? data : data.files;
+      if (!Array.isArray(files)) return [];
+      const normalized = new Set();
+      files.forEach((file) => {
+        const path = normalizeAssetPath(file);
+        if (path && isImagePath(path)) {
+          normalized.add(path);
+        }
+      });
+      return Array.from(normalized);
+    } catch {
+      return [];
+    }
+  }
+
+  async function readDirectoryListing() {
+    try {
+      const response = await fetch('assets/', { cache: 'no-store' });
+      if (!response.ok) return [];
+      const text = await response.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(text, 'text/html');
+      const links = Array.from(doc.querySelectorAll('a'));
+      const files = new Set();
+      links.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (!href) return;
+        const decoded = decodeURIComponent(href);
+        if (!isImagePath(decoded)) return;
+        const path = normalizeAssetPath(decoded);
+        if (path) {
+          files.add(path);
+        }
+      });
+      return Array.from(files);
+    } catch {
+      return [];
+    }
+  }
+
+  async function discoverAssetImages() {
+    for (const candidate of manifestCandidates) {
+      const result = await readManifest(candidate);
+      if (result.length) {
+        return result;
+      }
+    }
+    return readDirectoryListing();
+  }
+
+  function renderGallery(images) {
+    if (!galleryGrid || !images.length) return;
+    if (galleryPlaceholder) {
+      galleryPlaceholder.remove();
+    }
+    images.forEach(({ src, alt }, index) => {
+      const figure = document.createElement('figure');
+      figure.className = 'gallery__item';
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = alt;
+      img.loading = 'lazy';
+      img.addEventListener('click', () => openLightbox(index));
+      figure.appendChild(img);
+      galleryGrid.appendChild(figure);
+    });
+  }
+
+  function updateLightboxImage() {
+    if (!lightboxImage || !galleryImages.length) return;
+    const { src, alt } = galleryImages[activeImageIndex];
+    lightboxImage.src = src;
+    lightboxImage.alt = alt;
+  }
+
+  function openLightbox(index) {
+    if (!lightbox || !galleryImages.length) return;
+    activeImageIndex = index;
+    updateLightboxImage();
+    lightbox.hidden = false;
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.hidden = true;
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lightbox-open');
+  }
+
+  function stepLightbox(delta) {
+    if (!galleryImages.length) return;
+    const total = galleryImages.length;
+    activeImageIndex = (activeImageIndex + delta + total) % total;
+    updateLightboxImage();
+  }
+
+  function bindLightboxControls() {
+    if (lightboxPrev) {
+      lightboxPrev.addEventListener('click', () => stepLightbox(-1));
+    }
+    if (lightboxNext) {
+      lightboxNext.addEventListener('click', () => stepLightbox(1));
+    }
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
+    if (lightbox) {
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      });
+    }
+
+    document.addEventListener('keydown', (event) => {
+      if (!lightbox || lightbox.getAttribute('aria-hidden') === 'true') return;
+      if (event.key === 'Escape') {
+        closeLightbox();
+      } else if (event.key === 'ArrowLeft') {
+        stepLightbox(-1);
+      } else if (event.key === 'ArrowRight') {
+        stepLightbox(1);
+      }
+    });
+  }
+
+  async function initGallery() {
+    if (!galleryGrid) return;
+    const files = await discoverAssetImages();
+    if (!files.length) return;
+    galleryImages = files.map((src) => ({
+      src,
+      alt: buildAltFromFilename(src)
+    }));
+    renderGallery(galleryImages);
+    bindLightboxControls();
+  }
+
+  initGallery();
   applyLanguage('cs');
 })();
