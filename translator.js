@@ -46,7 +46,7 @@
       },
       signup: {
         title: 'Registrace týmu',
-        text: 'Registrace do 10. Dubna (prodlouženo) nebo do naplnění kapacity. Ta je omezená na 10 týmů, rozhoduje pořadí přihlášení a platby.'
+        text: 'Registrace do 10. Dubna (prodlouženo) nebo do naplnění kapacity. Ta je omezená na 10 týmů, rozhoduje pořadí přihlášení a platby.',
         cta: 'Otevřít registrační formulář',
         note: 'Po odeslání formuláře vám během týdne potvrdíme přijetí a zašleme platební údaje.'
       },
