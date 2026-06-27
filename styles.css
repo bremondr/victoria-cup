@@ -352,3 +352,17 @@ body.lightbox-open {
     padding: 2.5rem 1rem 3rem;
   }
 }
+
+.cancel-banner {
+    background: #d32f2f;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }

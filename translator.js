@@ -7,7 +7,8 @@
         title: 'Victoria cup: až do západu slunce',
         date: '18.–19. července 2026',
         lead: 'Letní fun turnaj na trávě v Chřibské pro mixové týmy.',
-        cta: 'Přihlásit se'
+        cta: 'Přihlásit se',
+        canceled: 'Omlouváme se, turnaj je pro nedostatek týmů zrušen.'
       },
       facts: {
         title: 'Základní informace',
@@ -79,7 +80,8 @@
         title: 'Victoria Cup: Until the Sunset',
         date: '18–19 July 2026',
         lead: 'A summer fun tournament on grass in Chřibská for mixed teams.',
-        cta: 'Sign up'
+        cta: 'Sign up',
+        canceled: 'We are sorry, the tournament is canceled due to lack of registered teams.'
       },
       facts: {
         title: 'Key Facts',
